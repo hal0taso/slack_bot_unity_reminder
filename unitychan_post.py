@@ -5,16 +5,10 @@ import slackbot_settings
 
 msg = "進捗!!進捗!!"
 
-def main():
-    
+if __name__ == '__main__':
     slack = Slacker(slackbot_settings.API_TOKEN)
     slack.chat.post_message(
         'unity_chan_test',
         msg,
         as_user=True
         )
-
-    
-
-if __name__ == '__main__':
-    
